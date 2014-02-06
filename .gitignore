@@ -1,5 +1,10 @@
-assets
+assets/*
+_ss_environment.php
+tools/phing-metadata
+silverstripe-cache
+.buildpath
+.project
+.settings
 .idea
-.sasscache
-awkward/_config_server.php
-
+.DS_Store
+vendor/
