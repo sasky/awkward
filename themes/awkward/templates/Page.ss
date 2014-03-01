@@ -23,25 +23,30 @@
         <!-- Add your site or application content here -->
         <div class="l_container">
             <header class="l_header">
-                <h1> Akward </h1>
+                <h1> Awkward </h1>
                 <h2> Introspections</h2>
             </header>
             <nav class="l_top_nav main_nav">
-                <a href="#" class="btn nav_btn left_nav_btn">Prev</a>
+            	<% if $PreviousArticle %>
+					<a href="$PreviousArticle" class="btn nav_btn left_nav_btn">Prev</a>
+				<% else %>
+					<p href="#" class="btn is-btn-disbaled nav_btn left_nav_btn">Prev</p>
+            	<% end_if %>
+
                 <div class="">
                     <a href="#" class="">About</a>
                 </div>
-                <a href="#" class="btn nav_btn right_nav_btn">Next</a>
-            </nav>
-            <section class="l_intro">
-                <h3>Lorum Ispsom </h3>
+				<% if $NextArticle %>
+					<a href="$NextArticle" class="btn nav_btn right_nav_btn">Next</a>
+				<% else %>
+					<p href="#" class="btn is-btn-disbaled nav_btn right_nav_btn">Next</p>
+				<% end_if %>
 
-            </section>
+            </nav>
             <article class="l_article" role="main" >
-				$Content
-				$Form
+				$Layout
             </article>
-            <footer>
+            <footer class="l_footer">
             </footer>
         </div>
 

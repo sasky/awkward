@@ -1,0 +1,3 @@
+$LastestPostTitle
+$LastestPostContent
+$Form

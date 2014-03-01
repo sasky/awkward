@@ -7,6 +7,9 @@
 /**
  * Correct `block` display not defined in IE 6/7/8/9 and Firefox 3.
  */
+*{
+  @include box-sizing(border-box);
+}
 
 article,
 aside,
@@ -90,6 +93,8 @@ textarea {
 
 body {
     margin: 0;
+    font-size: 20px;
+    background-color: #FFFFFF;
 }
 
 /* ==========================================================================
@@ -122,7 +127,6 @@ a:hover {
  * Address font sizes within `section` and `article` in Firefox 4+, Safari 5,
  * and Chrome.
  */
-
 h1 {
     font-size: 2em;
     margin: 0.67em 0;
@@ -209,6 +213,7 @@ mark {
 p,
 pre {
     margin: 1em 0;
+    line-height: 1.4em;
 }
 
 /**

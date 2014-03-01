@@ -1,5 +1,7 @@
-@import "base.scss";
-@import "layout.scss";
-@import "module.scss";
-@import "state.scss";
-@import "theme.scss";
+@import "compass/css3/box-sizing";
+
+@import "_base.scss";
+@import "_layout.scss";
+@import "_module.scss";
+@import "_state.scss";
+@import "_theme.scss";
